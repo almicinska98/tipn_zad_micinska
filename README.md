@@ -1,1 +1,2 @@
-# tipn_zad_micinska
+#Moje repozytorium z zadaniami 
+## Technologie informatyczne w pracy naukowej
