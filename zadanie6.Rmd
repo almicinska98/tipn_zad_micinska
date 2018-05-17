@@ -1,0 +1,57 @@
+---
+title: "Dieta wegańska"
+author: "Aleksandra Micińska"
+date: "17 maja 2018"
+output: 
+  html_document:
+    df_print: paged
+    theme: spacelab
+    highlight: espresso
+---
+#### Zalety diety wegańskiej
+
+ 1. Podstawę żywienia wegan stanowią:
+ + warzywa, 
+ + owoce, 
+ + produkty zbożowe 
+ + rośliny strączkowe 
+ + orzechy. 
+  
+  Każdą z tych grup pokarmowych cechuje niska kaloryczność, wysoka zawartość substancji odżywczych itp.
+ 
+ 2. Nieprawdą jest, że białko roślinne jest mniej wartościowe od białka zwierzęcego.
+ 3. Dieta jest korzystna dla pracy mózgu, w przeciwieństwie do diety bogatej w tłuszcz zwierzęcy
+
+## Wady diety wegańskiej
+ 1. Dieta wegańska może doprowadzić do choroby. Dowodem jest artykuł na stronie [tutaj](https://oczymlekarze.pl/zdrowy-styl-zycia/dieta/3404-powrot-miesa-czyli-dlaczego-pozegnalem-weganizm),
+ 2. Może powodować niedobory witamin,
+ 3. Musi być bardzo urozmaicona.
+ 
+ 
+#### Porównanie posiłku diety wegańskiej i normalnej
+ 
+ | Dieta                 | Wegańska                                               | Normalna                                                           |   |   |
+|-----------------------|--------------------------------------------------------|--------------------------------------------------------------------|---|---|
+| Rodzaj posiłku        | obiad                                                  | obiad                                                              |   |   |
+| Produkty              | bataty, ciecierzyca pomidory, jogurt sojowy, przyprawy | schab, bułka tarta, jajka, ziemniaki, marchewka, jabłko, przyprawy |   |   |
+| Liczba kalorii (kcal) | 340                                                    | 700                                                                |   |   |
+
+
+
+```{r echo=FALSE}
+library(ggplot2)
+ggplot(data = mpg) +
+geom_point(mapping = aes(x = displ , y = cty))
+```
+```{r echo=FALSE}
+library(tidyverse)
+diamonds %>% filter(cut == "Very Good")
+```
+```{r include=FALSE}
+ggplot(data = mpg) +
+  geom_histogram(mapping  = aes(displ), bins = 10) +
+  labs(title = "Auta", x = "pojemność", y = "ilość samochodów")
+```
+
+
+> A to jest cytowanie "Super cytowanie"
